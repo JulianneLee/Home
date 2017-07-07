@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cafe Shop</title>
+    <!--create an external link for css-->
+    <link href="cafeshop.css" rel="stylesheet" type="text/css"  media="all" />
+    <!--icon-->
+    <link rel="shortcut icon" href="logo1 icon.ico" />
+	<!--create an external link for javascript-->
+	<script src="cafeshop.js"></script>
+</head>
+<body>
+   <header> 
+	<nav>
+    	<!--Create an unordered list for the navigation bar-->
+		<ul>
+			<li><a href = "#" >Home</a></li>
+			<li><a href = "#about">About</a></li>
+            <li><a href = "#member">Member</a></li>
+			<li><a href = "#service">Service</a></li>
+            <li><a href = "#contact">Contact</a></li>
+		</ul>
+	</nav>
+    		<!--Create a box to fit the word and logo-->
+            <div class="hero-text-box">
+            	<!--Logo-->
+ 				<img src = "logo2.png" alt = "logo" style ="height: 300px; width: 400px;">
+              <h1>Coffee Indulgence</h1>
+            </div>
+    </header>
+
+<!--2nd box for body-->
+<div class = "body2">
+	<!--Insert the class id "about" style from the css; Link the text in navigation bar-->
+    <h1 class = "about" id = "about" style = "padding-top: 50px; padding-bottom: 5px">=--------------------= About =--------------------=</h1>
+	<p id = "abouttext">Our customers are our top priority. If we put people first, we cannot fail. We treat all with respect. We are kind hearted, positive, humble, and 			human. Be proud of our work. Be committed to doing the very best with passion and focus. We collect feedbacks to improve and to ensure our customers’ satisfaction. We deliver upmost effort in coffee making to our valued customers. For the coffee lovers, below are the steps to blend a simple yet delicious coffee recipe. Bon Appetit!<br>									<br></p>
+
+	<!--Slideshow-->
+	<h2 class = "about">=------------------------------= Steps =------------------------------=</h2>
+		<div class="about_slideshow">
+			<div class="aboutSlides fade">
+				<img src="coffee1.png" alt = "coffee1" style="height:100%;width:100%">
+			</div>
+			<div class="aboutSlides fade">
+				<img src="coffee2.png" alt = "coffee2" style="height:100%; width:100%">
+			</div>
+			<div class="aboutSlides fade">
+				<img src="coffee3.png" alt = "coffee3" style="height:100%; width:100%">
+			</div>
+            <div class="aboutSlides fade">
+				<img src="coffee4.png" alt = "coffee4" style="height:100%; width:100%">
+			</div>
+			<div class="aboutSlides fade">
+				<img src="coffee5.png" alt = "coffee5" style="height:100; width:100%">
+			</div>
+  
+  			<a class="prev" onclick="addSlides(-1)">&#x2039</a>
+            <a class="next" onclick="addSlides(1)">&#x203a</a>
+  			
+            <!--Slideshow dots-->
+			<div style="text-align:center;">
+				<span class="dot" onclick="thisSlide(1)"></span> 
+				<span class="dot" onclick="thisSlide(2)"></span> 
+				<span class="dot" onclick="thisSlide(3)"></span> 
+				<span class="dot" onclick="thisSlide(4)"></span> 
+        		<span class="dot" onclick="thisSlide(5)"></span> 
+			</div>
+		</div>
+	
+    	<!--3rd Box-->
+    	<div id = "member">
+			<h1 class = "about" id = "member1">=-------------------= Member =-------------------=</h1>
+        		<div>
+        			<h3 class="about" style="text-align:left; text-indent:100px">Coffee Indulgence Membership</h3>
+          	 		<p class= "text"> If you love our coffee, we would like to invite you to become a member! By being a member, you will enjoy exclusive privileges and rewards.</p>
+          				<h2 class="about">=--------------------= How to apply? =--------------------=</h2>
+						<p class= "text">Simply spend a minimum of $50* at any Coffee Indulgence café to sign up. </p>
+						<p class= "text">Approach our friendly service staff and they will assist you with the application process.</p>
+
+						<h2 class="about">=----------------= Membership Privileges =----------------=</h2>
+						<p class= "text">- Enjoy 15% discount with minimum spending of $20</p>
+						<p class= "text">- Birthday month special offers</p>
+						<p class= "text">- Exclusive seasonal benefits and offers</p>
+						<p class= "text">- Exclusive invitation to events and workshops</p>
+
+						<p class= "text"> *** Terms && Conditions Apply.</p>
+						<p>_</p>
+				</div>
+		</div>
+    
+    	<!--4th Box-->
+		<div id = "service">
+			<h1 class = "about" style = "padding-top: 50px; padding-bottom: 5px; margin-top:70px">=-------------------= Service =-------------------=</h1>
+			<br>
+
+				<h1 id = "current">Current Opportunities</h1>
+					<h2 id = "barista">Barista</h2>
+    
+    				<img src = "service1.jpg" alt = "barista" style = "height: 300px; weight: 100px; float: right; margin-right:50px;">
+ 
+					<p id = "baristatext">- Our baristas are as important as the quality of the coffee that we serve.
+					<br>- Our baristas are responsible for the preparation of hot and cold beverages, 
+					<br>cash register transactions, store cleanliness and product merchandising. </p>
+    				<br>
+                    
+    					<h2 id = "requirement">Requirements</h2>
+    						<p class= "text">- Possess at least SPM equivalent level and above.</p>
+    						<p class= "text">- Basic English required.</p>
+    						<p class= "text">- No working experience required as training will be provided.</p>
+    						<p class= "text">- Minimum SPM && above.</p>
+                            
+    						<h2 id = "salary">Salary</h2>
+    							<p id = "salary2">RM 1000 - RM 1500</p>
+		</div>
+    
+<!--5th Box-->
+<div class = "content">
+	<h1 class="about" style = "padding-top: 50px; padding-bottom: 5px; margin-top:240px;" id = "contact">=-----------------= Contact US =-----------------=</h1><br>
+        <div class = "left">
+        	<!--Google Map-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7819971\916647!2d101.66904961417342!3d3.152115197704817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49aca5c7421b%3A0xb7242dad56a6c240!2sHELP+University!5e0!3m2!1sen!2smy!4v1499237271478" 
+			width="500" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+          	 <p class = "lefttext"> Coffee Indulgence <br>
+				No. 15, Jalan Sri Semantan 1, <br>
+				Off Jalan Semantan, Bukit Damansara <br>
+				50490 Kuala Lumpur <br><br>
+				Tel: +6 03 2716 2000 <br>
+				Fax: +6 03 2094 7495 <br></p>
+
+		</div>
+		<!--Right-->
+			<div id = "right">
+            	<p>=--------------------= Opening Hours =--------------------=</p>
+            		<p class = "text">Monday *Close*</p>
+              		<p>Tuesday *10am-8pm*</p>
+                	<p>Wednesday *10am-8pm*</p>
+                  	<p>Thursday *10am-8pm*</p>
+                    <p>Friday *10am-8pm*</p>
+                    <p>Saturday && Sunday *10am-8pm*</p>
+                    <p>=--------------------------------------------------------=</p>
+						<input type="text" name="userEmail" id="userEmail" size = "50" placeholder="Enter Your Email">
+						<br><br>
+						<input type="submit" value="Get Notified!" id="submit">
+			</div>
+                		<br><br>
+</div>
+</div>
+</body>
+<footer id="site-footer">
+	<!--Copyright-->
+	<div id="footer1"><p>Copyright &copy; 2017 Coffee Indulgence - All Rights Reserved. </p></div>
+</footer>
+</html>
